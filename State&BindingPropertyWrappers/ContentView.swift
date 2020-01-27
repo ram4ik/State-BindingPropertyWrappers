@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("0")
+                .font(.system(size: 40))
+            HStack {
+                Button("+") {
+                    print("Increase")
+                }.font(.system(size: 40))
+                Button("-") {
+                    print("Decrease")
+                }.font(.system(size: 40))
+            }
+        }
     }
 }
 
